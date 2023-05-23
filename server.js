@@ -3,6 +3,7 @@
 const express = require('express');
 const routes = require('./api');
 const app = express();
+require('dotenv').config();
 
 const bodyParser = require('body-parser');
 const cors = require('cors')
@@ -16,7 +17,7 @@ app.use(bodyParser.json());
 app.use('/api',routes);
 
 // listen for requests
-app.listen(8080,function(){
+app.listen(provess.env.PORT,function(){
     console.log('Listening...')
 });
 
