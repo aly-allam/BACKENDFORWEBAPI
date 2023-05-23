@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.use('/api',routes);
 
 // listen for requests
-app.listen(provess.env.PORT,function(){
+app.listen(process.env.PORT,function(){
     console.log('Listening...')
 });
 
